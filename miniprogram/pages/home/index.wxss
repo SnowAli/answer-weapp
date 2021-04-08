@@ -1,0 +1,86 @@
+
+.container {
+  background-color:#b8abab1a;
+  height: 100%;
+}
+.navi-text {
+  color: white;
+  padding-left: 50rpx;
+}
+.mask {
+  z-index: -100;
+  position: absolute;
+  top: -950rpx;
+  width: 1500rpx;
+  height: 1500rpx;
+  background-image: linear-gradient(#fd8f10,#ffdddd);
+  border-radius: 50%;
+}
+
+.user {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  padding:  0 50rpx;
+}
+
+.user .nickname {
+  margin-left: 50rpx;
+  color: white;
+  font-size: 700;
+  font-size: 20px;
+}
+
+.collections {
+  margin-top: 40rpx;
+  padding: 60rpx 0;
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 18px;
+  
+  background: white;
+  border-radius: 20rpx;
+  box-shadow: 1px 2px 3px rgb(243, 199, 199);
+}
+
+.collections .collection {
+display: flex;
+justify-content: center;
+align-items: center;
+  width: 50%;
+}
+
+.collection:first-child {
+  border-right: 1px solid red;
+}
+
+.collection .coll-text {
+  margin-left: 20rpx;
+}
+
+.features {
+  margin-top: 60rpx;
+  padding: 30rpx 40rpx;
+  width: 80%;
+  background: white;
+  border-radius: 20rpx;
+  box-shadow: 1px 2px 3px rgb(241, 199, 199);
+}
+
+.features .feature {
+  padding: 20rpx;
+  border-bottom: 1px solid #eee;
+  font-size: 17px;
+}
+
+.feature {
+  display: flex;
+  
+  align-items: center;
+}
+
+.feature .fea-text {
+  margin-left: 20rpx;
+}

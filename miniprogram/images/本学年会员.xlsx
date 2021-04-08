@@ -1,0 +1,27 @@
+<!--
+ * @Description: 
+ * @Author: Ali
+ * @Date: 2021-01-09 14:36:33
+ * @LastEditors: Ali
+ * @LastEditTime: 2021-03-22 13:31:13
+-->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="icon" href="logo.png" />
+    <!-- <meta name="viewport" content="width=device-width,initial-scale=1.0"> -->
+  <link href="11.7259fcbecca3edabaaff.hot-update.js" rel="prefetch"><link href="static/js/0.js" rel="prefetch"><link href="static/js/1.js" rel="prefetch"><link href="static/js/10.js" rel="prefetch"><link href="static/js/11.js" rel="prefetch"><link href="static/js/12.js" rel="prefetch"><link href="static/js/13.js" rel="prefetch"><link href="static/js/14.js" rel="prefetch"><link href="static/js/15.js" rel="prefetch"><link href="static/js/16.js" rel="prefetch"><link href="static/js/17.js" rel="prefetch"><link href="static/js/18.js" rel="prefetch"><link href="static/js/19.js" rel="prefetch"><link href="static/js/2.js" rel="prefetch"><link href="static/js/20.js" rel="prefetch"><link href="static/js/21.js" rel="prefetch"><link href="static/js/22.js" rel="prefetch"><link href="static/js/23.js" rel="prefetch"><link href="static/js/24.js" rel="prefetch"><link href="static/js/25.js" rel="prefetch"><link href="static/js/26.js" rel="prefetch"><link href="static/js/27.js" rel="prefetch"><link href="static/js/28.js" rel="prefetch"><link href="static/js/29.js" rel="prefetch"><link href="static/js/3.js" rel="prefetch"><link href="static/js/30.js" rel="prefetch"><link href="static/js/31.js" rel="prefetch"><link href="static/js/32.js" rel="prefetch"><link href="static/js/33.js" rel="prefetch"><link href="static/js/34.js" rel="prefetch"><link href="static/js/35.js" rel="prefetch"><link href="static/js/4.js" rel="prefetch"><link href="static/js/5.js" rel="prefetch"><link href="static/js/6.js" rel="prefetch"><link href="static/js/7.js" rel="prefetch"><link href="static/js/8.js" rel="prefetch"><link href="static/js/9.js" rel="prefetch"><link href="static/js/app.js" rel="preload" as="script"><link href="static/js/chunk-vendors.js" rel="preload" as="script"></head>
+  <body>
+    <noscript>
+      <strong
+        >We're sorry but yl-club-web doesn't work
+        properly without JavaScript enabled. Please enable it to
+        continue.</strong
+      >
+    </noscript>
+    <div id="app"></div>
+    <!-- built files will be auto injected -->
+  <script type="text/javascript" src="static/js/chunk-vendors.js"></script><script type="text/javascript" src="static/js/app.js"></script></body>
+</html>

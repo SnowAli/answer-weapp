@@ -1,0 +1,7 @@
+<!-- components/swiper-limited-load/index.wxml -->
+<!-- 这里我没用到别的属性，如果你们用到其它属性的话可以查下文档，直接加进来就行 -->
+<swiper style="height:{{swiperHeight}}px" duration="{{swiperDuration}}" current="{{swiperCurrent}}" bindchange="swiperChange" circular>
+  <swiper-item wx:key="sss" wx:for="{{swiperList}}">
+    <item-view item="{{item}}" time="{{time}}" swiperHeight="{{swiperHeight}}" bindgetAnswer="getAnswer"></item-view>
+  </swiper-item>
+</swiper>

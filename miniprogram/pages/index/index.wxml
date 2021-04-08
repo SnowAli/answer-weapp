@@ -1,0 +1,51 @@
+<!-- index.wxml -->
+<navigation>
+  <view class="navi-text">
+    <text>冰糖雪梨</text>
+  </view>
+</navigation>
+<view class="container">
+  <view class="mask"></view>
+  <view class="swiper-wrap">
+    <swiper class="swiper" indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" circular="{{circular}}">
+      <block wx:for="{{imgUrls}}" wx:key="*this">
+        <swiper-item>
+          <image src="{{item}}" class="img" />
+        </swiper-item>
+      </block>
+    </swiper>
+  </view>
+  <view class="feature-wrap">
+    <van-row gutter="6">
+      <van-col span="14">
+        <block>
+          <navigator open-type="navigate" url="../answer/index" hover-class="navigator-hover">
+            <view class="feature-box answer">
+              <view class="feature-title ">答题</view>
+            </view>
+          </navigator>
+        </block>
+      </van-col>
+      <van-col span="10">
+        <block>
+          <navigator open-type="navigate" url="../analyse/index" hover-class="navigator-hover">
+            <view class="feature-box analyse">
+              <view class="feature-title">分析</view>
+            </view>
+          </navigator>
+        </block>
+      </van-col>
+    </van-row>
+    <van-row gutter="6">
+      <van-col span="24">
+        <block>
+          <navigator open-type="navigate" url="../list/index" hover-class="navigator-hover">
+            <view class="feature-box list">
+              <view class="feature-title ">排行榜</view>
+            </view>
+          </navigator>
+        </block>
+      </van-col>
+    </van-row>
+  </view>
+</view>

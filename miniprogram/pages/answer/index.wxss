@@ -1,0 +1,38 @@
+/* pages/start/index.wxss */
+
+.change-question{
+  width: 750rpx;
+  display: flex;
+  flex-direction: row;
+  position: fixed;
+  bottom: 0;
+  padding-bottom: env(safe-area-inset-bottom);
+}
+.footer {
+  position: fixed;
+  width: 100%;
+
+}
+
+.footer .count {
+    position: absolute;
+    box-sizing: border-box;
+    top: -115rpx;
+    height: 30%;
+    width: 100%;
+    padding: 35rpx 30rpx;
+    font-size: 24rpx;
+    overflow: hidden;
+    zoom: 1;
+    z-index: 1000;
+    background: #991517;
+}
+/* .answer-card{
+  width: 750rpx;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  position: fixed;
+  bottom: 0;
+  margin-bottom: calc(120rpx + env(safe-area-inset-bottom));
+} */

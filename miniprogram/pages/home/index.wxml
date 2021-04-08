@@ -1,0 +1,33 @@
+<navigation>
+  <view class="navi-text">
+    <text>冰糖雪梨</text>
+  </view>
+</navigation>
+<view class="container">
+  <view class="mask"></view>
+  <view class="user">
+    <van-image round src="{{userInfo.avatarUrl}}" width="150rpx" height="150rpx" custom-class="avatar" error-class="error"></van-image>
+    <text wx:if="{{!hasUserInfo}}" class="nickname" bindtap="getUserProfile">点击登录</text>
+    <text wx:else class="nickname">{{userInfo.nickName}}</text>
+  </view>
+  <view class="collections">
+    <view class="collection">
+      <van-icon name="bookmark-o" color="red" size="30px" />
+      <text class="coll-text">收藏</text>
+    </view>
+    <view class="collection">
+      <van-icon name="chart-trending-o" color="red" size="30px" />
+      <text class="coll-text">分析</text>
+    </view>
+  </view>
+  <view class="features">
+    <view class="feature">
+      <van-icon color="green" size="25px" name="question-o" />
+      <text class="fea-text">意见反馈</text>
+    </view>
+    <view class="feature">
+      <van-icon name="smile-o" color="orange" size="25px" />
+      <text class="fea-text">功能建议</text>
+    </view>
+  </view>
+</view>

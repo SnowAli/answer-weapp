@@ -1,0 +1,5 @@
+{
+  "usingComponents": {
+    "swiper-limited-load": "../../components/swiper-limited-load/index"
+  }
+}

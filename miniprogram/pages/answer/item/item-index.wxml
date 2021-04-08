@@ -1,0 +1,25 @@
+<!-- pages/start/item/item-index.wxml -->
+<scroll-view style="height:{{swiperHeight}}px" scroll-y>
+  <view class="page-item" wx:if="{{item.index != null}}">
+    <view class="timer-box ">
+      <text class="">{{time}}</text>
+      <image class="timer" src="../../../images/定时器.png"></image>
+    </view>
+    <!-- <view class="count-box">
+      <text class="text-current-count" wx:if="{{item.index != null || item.index < 0}}">
+        {{item.index + 1}}
+      </text>
+      <text class="text-total-count" wx:if="{{item.index != null}}">/{{item.total}}</text>
+    </view> -->
+    <view class="container">
+      <view class="">{{item.index + 1}} / {{item.total}} : {{item.question}}</view>
+      <van-radio-group value="{{radio}}" bind:change="onRadioChange">
+        <van-cell-group>
+          <van-cell clickable data-name="{{subItem.label}}" wx:for="{{item.options}}" wx:for-item="subItem" wx:key="index" title="{{subItem.label}}.{{subItem.text}}" bind:click="onRadioClick">
+            <van-radio slot="right-icon" name="{{subItem.label}}" />
+          </van-cell>
+        </van-cell-group>
+      </van-radio-group>
+    </view>
+  </view>
+</scroll-view>

@@ -1,0 +1,12 @@
+<topic-swiper>
+  <block>
+    <swiper-item>
+      <view class="">1</view>
+    </swiper-item>
+  </block>
+  <block>
+    <swiper-item>
+      <view class="">2</view>
+    </swiper-item>
+  </block>
+</topic-swiper>

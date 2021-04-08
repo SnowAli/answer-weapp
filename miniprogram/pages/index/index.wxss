@@ -1,0 +1,77 @@
+/**index.wxss**/
+
+
+.container {
+  background-color:#b8abab1a;
+  height: 100%;
+}
+.navi-text {
+  color: white;
+  padding-left: 20rpx;
+}
+.mask {
+  z-index: -100;
+  position: absolute;
+  top: -900rpx;
+  width: 1500rpx;
+  height: 1500rpx;
+  background-image: linear-gradient(#fd8f10,#ffdddd);
+  border-radius: 50%;
+}
+
+/* 设置放轮播图的盒子属性 */
+.swiper-wrap {
+  width: 90%;
+  transform: translateY(-30rpx);
+  border-radius: 10px;
+}
+
+.swiper {
+  border-radius: 10px;
+  height: 360rpx;
+}
+
+.swiper-item {
+  display: block;
+  height: 100%;
+ 
+}
+/* 设置轮播图图片属性 */
+swiper-item image {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+}
+
+.feature-wrap {
+  
+  border-radius: 25rpx;
+  padding: 6px 6px 0;
+  background-color: white;
+  width: 90%;
+}
+
+.feature-box {
+  padding: 50rpx;
+  height: 200rpx;
+  background-color: #ffdddd;
+
+  border-radius: 20rpx 16rpx;
+  margin-bottom: 6px;
+  font-style: italic;
+  font-weight: 600;
+  font-size: 30rpx;
+  box-sizing: border-box;
+}
+.answer {
+  background-color: rgb(183, 255, 199);
+}
+.analyse {
+  background-color: rgb(253, 216, 181);
+}
+.list {
+  background-color: rgb(255, 158, 158);
+
+  height: 240rpx;
+}
+
