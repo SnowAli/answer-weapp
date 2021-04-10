@@ -1,0 +1,18 @@
+<cu-custom bgColor="bg-gradual-orange" isBack="{{true}}">
+	<view slot="backText">返回</view>
+	<view slot="content">结算</view>
+</cu-custom>
+
+<view class="container">
+  <view class="title"></view>
+  <view class="content">
+    总计: {{total}}题
+答对: {{totalRight }}题
+答错: {{totalError}}题
+用时: {{totalTime}} 秒
+分数: {{totalCredit}}分
+  </view>
+  <view class="share">
+    <button open-type="share">转发分享</button>
+  </view>
+</view>

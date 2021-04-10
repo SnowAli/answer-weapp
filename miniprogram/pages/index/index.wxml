@@ -1,16 +1,16 @@
 <!-- index.wxml -->
 <navigation>
   <view class="navi-text">
-    <text>冰糖雪梨</text>
+    <text>悠悠百年知几何</text>
   </view>
 </navigation>
 <view class="container">
   <view class="mask"></view>
   <view class="swiper-wrap">
     <swiper class="swiper" indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" circular="{{circular}}">
-      <block wx:for="{{imgUrls}}" wx:key="*this">
+      <block >
         <swiper-item>
-          <image src="{{item}}" class="img" />
+          <image src="../../images/介绍.png" class="img" />
         </swiper-item>
       </block>
     </swiper>
@@ -19,11 +19,9 @@
     <van-row gutter="6">
       <van-col span="14">
         <block>
-          <navigator open-type="navigate" url="../answer/index" hover-class="navigator-hover">
-            <view class="feature-box answer">
-              <view class="feature-title ">答题</view>
-            </view>
-          </navigator>
+          <view class="feature-box answer" bindtap="toAnswerPage">
+            <view class="feature-title ">答题</view>
+          </view>
         </block>
       </van-col>
       <van-col span="10">
@@ -39,7 +37,7 @@
     <van-row gutter="6">
       <van-col span="24">
         <block>
-          <navigator open-type="navigate" url="../list/index" hover-class="navigator-hover">
+          <navigator open-type="navigate" url="../rank/index" hover-class="navigator-hover">
             <view class="feature-box list">
               <view class="feature-title ">排行榜</view>
             </view>

@@ -4,11 +4,21 @@
   flex-direction: column
 }
 .timer-box {
+
+  width: 100%;
+  height: 100rpx;
   text-align: center;
 }
 .timer-box .timer {
+  line-height: 110rpx;
+}
+.timer-box .timer-image {
+  position: absolute;
   width: 100rpx;
-height: 100rpx;}
+  height: 100rpx;
+  left: 50%;
+  transform: translateX(-50%);
+}
 .count-box{
   display: flex;
   flex-direction: row;

@@ -1,13 +1,13 @@
 <navigation>
   <view class="navi-text">
-    <text>冰糖雪梨</text>
+    <text>我的</text>
   </view>
 </navigation>
 <view class="container">
   <view class="mask"></view>
   <view class="user">
     <van-image round src="{{userInfo.avatarUrl}}" width="150rpx" height="150rpx" custom-class="avatar" error-class="error"></van-image>
-    <text wx:if="{{!hasUserInfo}}" class="nickname" bindtap="getUserProfile">点击登录</text>
+    <text wx:if="{{!userInfo}}" class="nickname" bindtap="getUserProfile">点击登录</text>
     <text wx:else class="nickname">{{userInfo.nickName}}</text>
   </view>
   <view class="collections">

@@ -6,16 +6,18 @@
   height: 100%;
 }
 .navi-text {
+  font-size: 17.5px;
+  font-weight: 500;
   color: white;
-  padding-left: 20rpx;
+  padding-left: 40rpx;
 }
 .mask {
   z-index: -100;
   position: absolute;
-  top: -900rpx;
+  top: -980rpx;
   width: 1500rpx;
   height: 1500rpx;
-  background-image: linear-gradient(#fd8f10,#ffdddd);
+  background-image: linear-gradient(45deg, #ff9700, #ed1c24);
   border-radius: 50%;
 }
 

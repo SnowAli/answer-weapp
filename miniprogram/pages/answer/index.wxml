@@ -1,32 +1,11 @@
 <!-- pages/start/index.wxml -->
-<swiper-limited-load id="swiper" generic:item-view="item-view" swiperHeight="{{swiperHeight}}" swiperDuration="{{swiperDuration}}" list="{{list}}" current="{{current}}" time="{{time}}" bindchange="swiperChange" bindgetAnswer="getAnswer"></swiper-limited-load>
-<view class="change-question">
-  {{time}}
-  <!-- <button catchtap="onClickLast">上一题</button> -->
-  <!-- <button catchtap="onClickNext" style="background:#ff0000e1;width:350rpx;border-radius:20rpx;color:white">
-    下一题
-  </button> -->
+<cu-custom bgColor="bg-gradual-orange" isBack="{{true}}">
+	<view slot="backText">返回</view>
+	<view slot="content">答题</view>
+</cu-custom>
+<start-swiper id="swiper" swiperHeight="{{swiperHeight}}" swiperDuration="{{swiperDuration}}" list="{{list}}" total="{{total}}" time="{{time}}" bindgetAnswer="getAnswer" bindnextQuestion="nextQuestion" bindcommitAnswer="commitAnswer">
+ 
+</start-swiper>
+<view class="footer">
+  <!-- <view class="count">{{time}}</view> -->
 </view>
-<!-- <view class="answer-card">
-  <button class="btn-answer-card" catchtap="onClickAnswerCard">答题卡</button>
-</view> -->
--->
-<!-- <view class="footer" animation="{{layerlayer.layerAnimation}}">
-  <view class="count">
-    <view class="success">{{answers.success}}</view>
-    <view class="error">{{answers.error}}</view>
-  </view>
-  <scroll-view class="status-lists" scroll-y="true">
-    <block wx:for="{{answers.allList}}" wx:key="index">
-      <view bindtap="setActiveNum" data-option="{{index}}" wx:if="{{item.isAnswer == 0}}" class="status-list {{answers.activeNum == index?'active':''}}">
-        {{index+1}}
-      </view>
-      <view bindtap="setActiveNum" data-option="{{index}}" wx:if="{{item.isAnswer == 1}}" class="status-list success  {{answers.activeNum == index?'active':''}}">
-        {{index+1}}
-      </view>
-      <view bindtap="setActiveNum" data-option="{{index}}" wx:if="{{item.isAnswer == 2}}" class="status-list error  {{answers.activeNum == index?'active':''}}">
-        {{index+1}}
-      </view>
-    </block>
-  </scroll-view>
-</view> -->

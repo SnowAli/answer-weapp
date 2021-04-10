@@ -1,0 +1,7 @@
+{
+  "component": true,
+  "usingComponents": {
+    "item-view": "../../pages/answer/item/item-index"
+  },
+  "navigationBarTitleText": "微信自带swiper"
+}

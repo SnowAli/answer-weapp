@@ -1,3 +1,10 @@
+/*
+ * @Description: 
+ * @Author: Ali
+ * @Date: 2021-04-06 12:51:40
+ * @LastEditors: Ali
+ * @LastEditTime: 2021-04-10 19:51:36
+ */
 // 云函数模板
 // 部署：在 cloud-functions/login 文件夹右击选择 “上传并部署”
 
@@ -27,9 +34,9 @@ exports.main = async (event, context) => {
 
   return {
     event,
-    openid: wxContext.OPENID,
-    appid: wxContext.APPID,
-    unionid: wxContext.UNIONID,
+    openId: wxContext.OPENID,
+    appId: wxContext.APPID,
+    unionId: wxContext.UNIONID,
     env: wxContext.ENV,
   }
 }

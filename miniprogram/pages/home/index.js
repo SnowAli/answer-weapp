@@ -3,9 +3,9 @@
  * @Author: Ali
  * @Date: 2021-04-04 18:33:04
  * @LastEditors: Ali
- * @LastEditTime: 2021-04-07 23:10:48
+ * @LastEditTime: 2021-04-10 15:07:13
  */
-// pages/home/index.js
+const app = getApp()
 Page({
 
   /**
@@ -13,14 +13,22 @@ Page({
    */
   data: {
     hasUserInfo: false,
-    userInfo: {}
+    userInfo: null
   },
 
 
   onLoad: function (options) {
     // 查看是否授权
-    console.log(this.data.hasUserInfo);
+
+  },
+  onShow: function (options) {
     console.log(this.data.userInfo);
+    const { globalData: { userInfo } } = app
+    if (userInfo) {
+      this.setData({
+        userInfo: userInfo
+      })
+    }
   },
 
 

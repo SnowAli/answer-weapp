@@ -1,12 +1,4 @@
-<topic-swiper>
-  <block>
-    <swiper-item>
-      <view class="">1</view>
-    </swiper-item>
-  </block>
-  <block>
-    <swiper-item>
-      <view class="">2</view>
-    </swiper-item>
-  </block>
-</topic-swiper>
+<cu-custom bgColor="bg-gradual-pink" isBack="{{true}}">
+	<view slot="backText">返回</view>
+	<view slot="content">分析</view>
+</cu-custom>

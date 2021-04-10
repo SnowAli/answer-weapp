@@ -36,12 +36,10 @@
     "userConfirmedUseCompilerModuleSwitch": false,
     "userConfirmedBundleSwitch": false,
     "packNpmManually": true,
-    "packNpmRelationList": [
-      {
-        "packageJsonPath": "./package.json",
-        "miniprogramNpmDistDir": "./miniprogram_npm/"
-      }
-    ],
+    "packNpmRelationList": [{
+      "packageJsonPath": "./package.json",
+      "miniprogramNpmDistDir": "./miniprogram_npm/"
+    }],
     "minifyWXSS": true
   },
   "compileType": "miniprogram",
@@ -66,13 +64,11 @@
       "list": []
     },
     "miniprogram": {
-      "list": [
-        {
-          "name": "pages/answer/index",
-          "pathName": "pages/answer/index",
-          "scene": null
-        }
-      ]
+      "list": [{
+        "name": "pages/answer/index",
+        "pathName": "pages/answer/index",
+        "scene": null
+      }]
     }
   }
 }

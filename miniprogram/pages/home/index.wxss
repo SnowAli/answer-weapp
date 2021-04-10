@@ -5,7 +5,8 @@
 }
 .navi-text {
   color: white;
-  padding-left: 50rpx;
+  font-size: 17.5px;
+  padding-left: 60rpx;
 }
 .mask {
   z-index: -100;
@@ -21,7 +22,7 @@
   display: flex;
   align-items: center;
   width: 100%;
-  padding:  0 50rpx;
+  padding:  0 65rpx;
 }
 
 .user .nickname {

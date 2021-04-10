@@ -1,12 +1,16 @@
 /**app.wxss**/
-
+@import "/colorui/main.wxss";
+@import "/colorui/icon.wxss";
 @import '/miniprogram_npm/@vant/weapp/common/index.wxss';
+
 view {
   box-sizing: border-box;
 }
+
 page {
   height: 100%;
 }
+
 .container {
   height: 100%;
   display: flex;
@@ -15,4 +19,4 @@ page {
 
   padding: 200rpx 0;
   box-sizing: border-box;
-} 
+}

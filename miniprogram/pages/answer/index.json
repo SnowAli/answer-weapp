@@ -1,7 +1,8 @@
 {
   "usingComponents": {
-    "swiper-limited-load": "../../components/swiper-limited-load/index",
+
+    "start-swiper": "../../components/start-swiper",
     "item-view": "./item/item-index"
   },
-  "navigationBarTitleText": "冰糖雪梨"
+  "navigationBarTitleText": "答题"
 }

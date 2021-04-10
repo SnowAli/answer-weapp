@@ -3,11 +3,11 @@
     "pages/index/index",
     "pages/home/index",
     "pages/answer/index",
-    "pages/list/index",
+    "pages/rank/index",
     "pages/analyse/index",
-    "pages/answer_card/index"
+    "pages/answer_card/index",
+    "pages/checkout/index"
   ],
-
   "tabBar": {
     "backgroundColor": "#ffffff",
     "color": "#979797",
@@ -28,10 +28,11 @@
     ]
   },
   "window": {
+    "navigationStyle": "custom",
     "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "#ff0000",
     "navigationBarTextStyle": "white",
-    "navigationBarTitleText": "冰糖雪梨",
+    "navigationBarTitleText": "悠悠百年知几何",
     "backgroundColor": "#ffffff"
   },
   "usingComponents": {
@@ -43,8 +44,8 @@
     "van-radio": "@vant/weapp/radio/index",
     "van-radio-group": "@vant/weapp/radio-group/index",
     "van-cell": "@vant/weapp/cell/index",
-    "van-cell-group": "@vant/weapp/cell-group/index"
-
+    "van-cell-group": "@vant/weapp/cell-group/index",
+    "cu-custom":"/colorui/components/cu-custom"
   },
   "debug": true,
   "sitemapLocation": "sitemap.json"

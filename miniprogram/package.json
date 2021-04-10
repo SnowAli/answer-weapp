@@ -5,5 +5,11 @@
   "license": "MIT",
   "dependencies": {
     "@vant/weapp": "^1.6.8"
+  },
+
+  "config": {
+    "commitizen": {
+      "path": "../node_modules/cz-conventional-emoji"
+    }
   }
 }
