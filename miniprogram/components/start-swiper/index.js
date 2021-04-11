@@ -3,7 +3,7 @@
  * @Author: Ali
  * @Date: 2021-04-09 22:46:00
  * @LastEditors: Ali
- * @LastEditTime: 2021-04-10 12:57:29
+ * @LastEditTime: 2021-04-11 19:38:04
  */
 // pages/start-swiper/index.js
 const app = getApp();
@@ -109,7 +109,15 @@ Component({
           title: "提示",
           content: "您已经答完所有题，是否提交？",
           success: (res) => {
-            this.triggerEvent('commitAnswer')
+            if (res.confirm) {
+              this.triggerEvent('commitAnswer')
+            }
+
+          },
+          fail: (err) => {
+
+            console.log(err);
+            return
           }
         })
         return

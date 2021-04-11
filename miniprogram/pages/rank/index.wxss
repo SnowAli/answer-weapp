@@ -1,1 +1,46 @@
-/* pages/list/index.wxss */
+.rank-list {
+  font-size: 14px;
+}
+
+.rank-item {
+  display: flex;
+  align-items: center;
+  padding: 20rpx 0;
+  border-bottom: 1px solid rgb(206, 198, 198);
+}
+
+.item-index {
+  width: 180rpx;
+  text-align: center;
+  font-weight: 600;
+  font-size: 18;
+}
+.item-index image {
+  width: 50rpx;
+  height: 50rpx;
+}
+
+.item-userInfo {
+  display: flex;
+  align-items: center;
+  width: 350rpx;
+}
+
+.item-userInfo .avatar {
+  width: 70rpx;
+  height: 70rpx;
+  border-radius: 10rpx;
+  margin-bottom: 10rpx;
+  margin-right: 10rpx;
+}
+
+.item-score {
+  width: 160rpx;
+  text-align: right;
+}
+
+.item-score .totalCredit {
+  font-size: 16px;
+ 
+  color: #e54d42;
+}

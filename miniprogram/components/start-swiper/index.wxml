@@ -4,9 +4,13 @@
     <item-view item="{{item}}" index="{{index}}" currentIndex="{{currentIndex}}" time="{{time}}" swiperHeight="{{swiperHeight}}" total="{{total}}" catchtouchmove="catchTouchMove" bindgetAnswer="getAnswer"></item-view>
   </swiper-item>
 </swiper>
-<view class="change-question">
-  <button wx:if="{{hasNext}}" catchtap="onClickNext">下一题</button>
-  <button wx:if="{{hasCommit}}" catchtap="onClickNext">提交</button>
+<view class="change-question ">
+  <button class="cu-btn bg-red margin-tb-sm lg" wx:if="{{hasNext}}" catchtap="onClickNext">
+    下一题
+  </button>
+  <button class="cu-btn bg-red margin-tb-sm lg" wx:if="{{hasCommit}}" catchtap="onClickNext">
+    提交
+  </button>
 </view>
 <!-- <view class="answer-card">
   <button class="btn-answer-card" catchtap="onClickAnswerCard">答题卡</button>

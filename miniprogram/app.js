@@ -3,7 +3,7 @@
  * @Author: Ali
  * @Date: 2021-04-03 19:30:56
  * @LastEditors: Ali
- * @LastEditTime: 2021-04-10 22:12:55
+ * @LastEditTime: 2021-04-11 18:14:34
  */
 // app.js
 App({
@@ -12,11 +12,13 @@ App({
     openid: '',
     hasUserInfo: false,
     userInfo: null,
+
     navBarHeight: 0, // 导航栏高度
     menuBotton: 0, // 胶囊距底部间距（保持底部间距一致）
     menuRight: 0, // 胶囊距右方间距（方保持左、右间距一致）
     menuHeight: 0, // 胶囊高度（自定义内容可与胶囊高度保证一致）
   },
+  systemInfo: null,
 
   onLaunch: function (options) {
     console.log(1111, options);
@@ -26,6 +28,7 @@ App({
     })
     this.setNavBarInfo()
     this.getOpenId()
+    this.getSystemInfo()
   },
 
 
@@ -37,7 +40,7 @@ App({
       success: e => {
         this.globalData.StatusBar = e.statusBarHeight;
         let custom = wx.getMenuButtonBoundingClientRect();
-        this.globalData.Custom = custom;  
+        this.globalData.Custom = custom;
         this.globalData.CustomBar = custom.bottom + custom.top - e.statusBarHeight;
       }
     })
@@ -57,12 +60,21 @@ App({
   getOpenId () {
     wx.cloud.callFunction({
       name: 'login',
+      traceUser: true,
       success: res => {
         const { result: { openId }
         } = res
         this.globalData.openId = openId
       }
     })
+  },
+  getSystemInfo () {
+    wx.getSystemInfo({
+      success: (res) => {
+        console.log(res);
+        this.systemInfo = res;
+      }
+    });
   }
 
 })

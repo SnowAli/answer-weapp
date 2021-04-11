@@ -30,7 +30,7 @@ Page({
 
     this.insertResult()
 
-
+    this.drawWall()
 
 
 
@@ -68,6 +68,38 @@ Page({
     }
 
 
+  },
+
+  drawWall () {
+    const query = wx.createSelectorQuery()
+    query.select('#wall')
+      .fields({ node: true, size: true })
+      .exec((res) => {
+        const { width, height } = res[0]
+        const canvas = res[0].node
+        const ctx = canvas.getContext('2d')
+
+        const dpr = wx.getSystemInfoSync().pixelRatio
+        const r = 3 * dpr
+        canvas.width = width
+        canvas.height = height
+        for (var i = r * 2; i < width - r; i += r * 4) {
+          this.drawSawtooth(ctx, i, height, r, 0);
+        }
+      })
+  },
+
+  drawSawtooth (ctx, x, y, r, d) {
+    //d:方向
+    ctx.fillStyle = "#fff";
+    ctx.beginPath();
+    if (d == 1) {
+      ctx.arc(x, y, r, Math.PI, 0, true);
+    } else {
+      ctx.arc(x, y, r, 0, Math.PI, true);
+    }
+    ctx.closePath();
+    ctx.fill();
   }
 
 

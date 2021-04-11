@@ -8,9 +8,9 @@
   <view class="mask"></view>
   <view class="swiper-wrap">
     <swiper class="swiper" indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" circular="{{circular}}">
-      <block >
+      <block>
         <swiper-item>
-          <image src="../../images/介绍.png" class="img" />
+          <image src="cloud://test-0g36m7t4031c1bfe.7465-test-0g36m7t4031c1bfe-1302877023/692909.4435119313.png" class="img" />
         </swiper-item>
       </block>
     </swiper>
@@ -19,7 +19,7 @@
     <van-row gutter="6">
       <van-col span="14">
         <block>
-          <view class="feature-box answer" bindtap="toAnswerPage">
+          <view class="feature-box answer" bindtap="toAnswerPage" bgColor="bg-gradual-orange">
             <view class="feature-title ">答题</view>
           </view>
         </block>
@@ -47,3 +47,4 @@
     </van-row>
   </view>
 </view>
+<button bindtap="upload">aaa</button>

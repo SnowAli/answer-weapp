@@ -1,12 +1,16 @@
 /* pages/start-swiper/index.wxss */
-
+@import "/colorui/main.wxss";
+@import "/colorui/icon.wxss";
 .change-question{
   width: 750rpx;
-  display: flex;
-  flex-direction: row;
+  text-align: center;
   position: fixed;
   bottom: 0;
   padding-bottom: env(safe-area-inset-bottom);
+}
+.change-question button {
+  width: 670rpx;
+  
 }
 
 .answer-card{

@@ -1,1 +1,100 @@
-/* miniprogram/pages/checkout/index.wxss */
+
+.board {
+  position: relative;
+  width: 700rpx;
+  height: 350rpx;
+  background-color: whitesmoke;
+  border-radius: 20rpx;
+  border: 3px solid #333;
+  transform: translateY(-120rpx);
+  
+}
+.board .flag {
+  position: absolute;
+  top: -199rpx;
+  width: 100%;
+ 
+  text-align: center;
+  color: #fff;
+ 
+  z-index: 10;
+}
+.board .flag-title {
+  position: absolute;
+  top: -45rpx;
+  width: 100%;
+  height: 200rpx;
+  text-align: center;
+  color: #fff;
+ 
+  z-index: 10;
+}
+.board #wall {
+  border-radius: 16rpx;
+  height: 70%;
+  width: 100%;
+  margin: 0 auto;
+  background: rgb(255 87 87);
+  border: none;
+  
+}
+
+.board .credit-box {
+  z-index: 100;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  left: 50%;
+
+  top: 110rpx;
+  transform: translate(-50%,-50%);
+
+  background-color: #fff;
+  width: 180rpx;
+  height: 180rpx;
+  border-radius: 50%;
+}
+
+.credit-box .total-credit {
+  color: red;
+}
+
+.credit-box .total-credit .num {
+  font-size: 36px;
+}
+
+.board .statist-box {
+  position: absolute;
+  left: 20rpx;
+  top: 60rpx;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 100;
+}
+
+.board .time-box {
+  position: absolute;
+  right: 20rpx;
+  top: 60rpx;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 100;
+}
+.board .time-box image {
+  width: 60rpx;
+  height: 60rpx;
+}
+
+.share {
+ left: 50%;
+ transform: translateX(-50%);
+  position: absolute;
+  bottom: 15rpx;
+}

@@ -17,7 +17,8 @@
   top: -980rpx;
   width: 1500rpx;
   height: 1500rpx;
-  background-image: linear-gradient(45deg, #ff9700, #ed1c24);
+  background-image: linear-gradient(45deg, #c5390f, #f70e17c9);
+  /* background-image: linear-gradient(45deg, #ff9700, #ed1c24); */
   border-radius: 50%;
 }
 
@@ -57,7 +58,7 @@ swiper-item image {
   padding: 50rpx;
   height: 200rpx;
   background-color: #ffdddd;
-
+position: relative;
   border-radius: 20rpx 16rpx;
   margin-bottom: 6px;
   font-style: italic;
@@ -65,14 +66,24 @@ swiper-item image {
   font-size: 30rpx;
   box-sizing: border-box;
 }
+.feature-img {
+  width: 150rpx;
+  height: 150rpx;
+  right: 20rpx;
+  bottom: 20rpx;
+  position: absolute;
+}
 .answer {
-  background-color: rgb(183, 255, 199);
+  background-color:#d7f0db;
+ background-image: url('cloud://test-0g36m7t4031c1bfe.7465-test-0g36m7t4031c1bfe-1302877023/868334.3038940221.png');
 }
 .analyse {
-  background-color: rgb(253, 216, 181);
+  background-image: url('cloud://test-0g36m7t4031c1bfe.7465-test-0g36m7t4031c1bfe-1302877023/467958.71927869006.png');
+  background-color: #fde7d2;
 }
 .list {
-  background-color: rgb(255, 158, 158);
+  background-image: url('cloud://test-0g36m7t4031c1bfe.7465-test-0g36m7t4031c1bfe-1302877023/747864.4110549901.png');
+  background-color:  #fadbd9;
 
   height: 240rpx;
 }

@@ -27,6 +27,36 @@
         {
           "name": "pages/rank/index",
           "pathName": "pages/rank/index",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/answer/index",
+          "pathName": "pages/answer/index",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/analyse/index",
+          "pathName": "pages/analyse/index",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/home/index",
+          "pathName": "pages/home/index",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/checkout/index",
+          "pathName": "pages/checkout/index",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/advise/index",
+          "pathName": "pages/advise/index",
           "scene": null
         }
       ]

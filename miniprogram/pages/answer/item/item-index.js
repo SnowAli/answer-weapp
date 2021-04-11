@@ -3,7 +3,7 @@
  * @Author: Ali
  * @Date: 2021-04-05 21:38:46
  * @LastEditors: Ali
- * @LastEditTime: 2021-04-10 12:58:21
+ * @LastEditTime: 2021-04-11 15:49:24
  */
 // pages/start/item/item-index.js
 Component({
@@ -23,6 +23,7 @@ Component({
       type: Number,
       value: 0
     },
+
     item: {
       type: Object,
       value: null
@@ -40,6 +41,7 @@ Component({
 
 
   data: {
+    progress: '', // 进度
     radio: '',
     answer: '',
     points: 0, // 分值
@@ -57,10 +59,12 @@ Component({
       });
 
       this.setData({
+        progress: Math.round((this.properties.index + 1) / this.properties.total * 10000) / 100.00 + "%",
         radio: '',
         points: 100 / this.properties.total,
         answer: nv.answer
       })
+      console.log(this.progress);
     },
     'time': function (nv) {
       if (nv === 60) {

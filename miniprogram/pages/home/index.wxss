@@ -14,7 +14,8 @@
   top: -950rpx;
   width: 1500rpx;
   height: 1500rpx;
-  background-image: linear-gradient(#fd8f10,#ffdddd);
+  background-image: linear-gradient(45deg, #c51c0f, #f70e17c9);
+  /* background-image: linear-gradient(#fd8f10,#ffdddd); */
   border-radius: 50%;
 }
 
@@ -31,15 +32,17 @@
   font-size: 700;
   font-size: 20px;
 }
-
+.user .van-image {
+  border: 2px solid white;
+}
 .collections {
   margin-top: 40rpx;
-  padding: 60rpx 0;
+  padding: 100rpx 0;
   width: 80%;
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 18px;
+  font-size: 29px;
   
   background: white;
   border-radius: 20rpx;
@@ -78,10 +81,17 @@ align-items: center;
 
 .feature {
   display: flex;
-  
+  position: relative;
   align-items: center;
 }
 
 .feature .fea-text {
   margin-left: 20rpx;
+}
+
+.feedback-btn {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
 }

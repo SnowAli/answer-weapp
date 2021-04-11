@@ -1,1 +1,4 @@
-/* pages/answer/index.wxss */
+.container {
+  width: 200px;
+  height: 200px;
+}

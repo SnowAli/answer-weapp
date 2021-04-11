@@ -1,5 +1,5 @@
 <!-- pages/start/index.wxml -->
-<cu-custom bgColor="bg-gradual-orange" isBack="{{true}}">
+<cu-custom bgColor="bg-red" isBack="{{true}}">
 	<view slot="backText">返回</view>
 	<view slot="content">答题</view>
 </cu-custom>

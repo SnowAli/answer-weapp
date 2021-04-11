@@ -1,22 +1,22 @@
-<cu-custom bgColor="bg-gradual-pink" isBack="{{true}}">
-	<view slot="backText">返回</view>
-	<view slot="content">排行榜</view>
+<cu-custom bgColor="bg-gradual-red" isBack="{{true}}">
+  <view slot="backText">返回</view>
+  <view slot="content">排行榜</view>
 </cu-custom>
-
-<view class="cu-list menu-avatar">
-    <view class="cu-item" wx:key="rank" wx:for="{{rank}}">
-      <view class="cu-avatar round lg" style="background-image:url({{item.avatarUrl}});"></view>
-      <view class="content">
-        <view class="text-grey">{{item.nickName}} {{index + 1}}</view>
-        <view class="text-gray text-sm flex">
-          <text class="text-cut">
-							<text class="cuIcon-infofill text-red  margin-right-xs"></text> 我已天理为凭，踏入这片荒芜，不再受凡人的枷锁遏制。我已天理为凭，踏入这片荒芜，不再受凡人的枷锁遏制。
-          </text>
-        </view>
-      </view>
-      <view class="action">
-        <view class="text-grey text-xs">分数：{{item.totalCredit}}</view>
-        <view class="cu-tag round bg-grey sm">耗时：{{item.totalTime}}</view>
-      </view>
+<view class="rank-list">
+  <view class="rank-item" wx:key="rank" wx:for="{{rank}}">
+    <view wx:if="{{index < 3}}" class="item-index">
+      <image wx-if="{{index===0}}" src="../../images/1.png"></image>
+      <image wx-if="{{index===1}}" src="../../images/2.png"></image>
+      <image wx:if="{{index===2}}" class="" src="../../images/3.png"></image>
     </view>
+    <view wx:else class="item-index">{{index + 1}}</view>
+    <view class="item-userInfo">
+      <image class="avatar" src="{{item.avatarUrl}}"></image>
+      <view class="nicnName">{{item.nickName}}</view>
     </view>
+    <view class="item-score">
+      <view class="totalCredit">{{item.totalCredit}}分</view>
+      <view class="totalTime">用时 {{item.totalTime}} 秒</view>
+    </view>
+  </view>
+</view>

@@ -1,0 +1,10 @@
+<cu-custom bgColor="bg-red" isBack="{{true}}">
+	<view slot="backText">返回</view>
+	<view slot="content">建议</view>
+</cu-custom>
+
+
+  <view class="layer1"></view>
+  <view class="layer2"></view>
+  <view class="layer3"></view>
+  <view class="layer4"></view>

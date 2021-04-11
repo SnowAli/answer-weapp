@@ -1,0 +1,23 @@
+/* miniprogram/pages/advise/index.wxss */
+.layer1 {
+  width: 100%;
+  background-color:  #fac3bf;
+
+height: 20%;
+}
+.layer2 {
+  width: 100%;
+  height: 6%;
+
+	background-color: #ffd5ae;
+}
+.layer3 {
+   background-color:  #e8f4d9;
+  width: 100%;
+  height: 60%;
+}
+.layer4 {
+  background-color: #f9d7ea;
+  width: 100%;
+  height: 4%;
+}

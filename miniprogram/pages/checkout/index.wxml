@@ -1,18 +1,32 @@
-<cu-custom bgColor="bg-gradual-orange" isBack="{{true}}">
-	<view slot="backText">返回</view>
-	<view slot="content">结算</view>
+<cu-custom bgColor="bg-red" isBack="{{true}}">
+  <view slot="backText">返回</view>
+  <view slot="content">成绩</view>
 </cu-custom>
-
 <view class="container">
-  <view class="title"></view>
-  <view class="content">
-    总计: {{total}}题
-答对: {{totalRight }}题
-答错: {{totalError}}题
-用时: {{totalTime}} 秒
-分数: {{totalCredit}}分
-  </view>
-  <view class="share">
-    <button open-type="share">转发分享</button>
+  <view class="board">
+    <image class="flag" src="cloud://test-0g36m7t4031c1bfe.7465-test-0g36m7t4031c1bfe-1302877023/703024.1000409871.png"></image>
+    <view class="statist-box">
+      <view class="statist-num">总共：{{total}} 题</view>
+      <view class="statist-num">答对：{{totalRight}} 题</view>
+      <view class="statist-num">答错：{{totalError}} 题</view>
+    </view>
+    <view class="credit-box">
+      <view class="total-credit">
+        <text class="num">{{totalCredit}}</text>
+        分
+      </view>
+    </view>
+    <view class="time-box">
+      <image src="../../images/计数器.png" mode="aspectFit|aspectFill|widthFix" lazy-load="false" binderror="" bindload=""></image>
+      <view class="total-time">
+        <text class="num">用时：{{totalTime}}</text>
+        秒
+      </view>
+    </view>
+    <text class="flag-title">答题结束</text>
+    <canvas type="2d" id="wall"></canvas>
+    <view class="share">
+      <button class="cu-btn round line-red" open-type="share">转发分享</button>
+    </view>
   </view>
 </view>

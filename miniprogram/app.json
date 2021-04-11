@@ -6,14 +6,16 @@
     "pages/rank/index",
     "pages/analyse/index",
     "pages/answer_card/index",
-    "pages/checkout/index"
+    "pages/checkout/index",
+    "pages/advise/index"
   ],
   "tabBar": {
     "backgroundColor": "#ffffff",
     "color": "#979797",
-    "selectedColor": "#ff7200",
+    "selectedColor": "#e54d42",
     "borderStyle": "white",
-    "list": [{
+    "list": [
+      {
         "pagePath": "pages/index/index",
         "iconPath": "images/index.png",
         "selectedIconPath": "images/index-active.png",
@@ -45,7 +47,7 @@
     "van-radio-group": "@vant/weapp/radio-group/index",
     "van-cell": "@vant/weapp/cell/index",
     "van-cell-group": "@vant/weapp/cell-group/index",
-    "cu-custom":"/colorui/components/cu-custom"
+    "cu-custom": "/colorui/components/cu-custom"
   },
   "debug": true,
   "sitemapLocation": "sitemap.json"
