@@ -18,9 +18,7 @@ Page({
     ],
   },
 
-  /**
-   * 生命周期函数--监听页面加载
-   */
+
   onLoad: function (options) {
     // console.log(app.systemInfo);
     var systemInfo = app.systemInfo;
@@ -28,7 +26,7 @@ Page({
     var updateData = {};
     //双折线图配置参数
     doubleLineCanvasWidth = systemInfo.screenWidth - rate * 64;
-    doubleLineCanvasHeight = rate * 304 + rate * 20 + rate * 32 + rate * 24; //轴高+内外边距+字体大小
+    doubleLineCanvasHeight = rate * 600 + rate * 20 + rate * 32 + rate * 24; //轴高+内外边距+字体大小
     var doubleLineYMax = 0;
     var doubleLineYMin = 0;
     var doubleLineXMax = 0;
@@ -42,10 +40,10 @@ Page({
     updateData['doubleLineCanvasData.yAxis.lineWidth'] = rate * 2;
     updateData['doubleLineCanvasData.yAxis.dataWidth'] = rate * 68;
     updateData['doubleLineCanvasData.yAxis.isShow'] = true;
-    updateData['doubleLineCanvasData.yAxis.isDash'] = true;
+    updateData['doubleLineCanvasData.yAxis.isDash'] =false;
     updateData['doubleLineCanvasData.yAxis.minData'] = doubleLineYMin;
     updateData['doubleLineCanvasData.yAxis.maxData'] = doubleLineYMax;
-    updateData['doubleLineCanvasData.yAxis.padd'] = rate * 304 / (doubleLineYMax - doubleLineYMin);
+    updateData['doubleLineCanvasData.yAxis.padd'] = rate * 600 / (doubleLineYMax - doubleLineYMin);
 
     updateData['doubleLineCanvasData.xAxis.dataHeight'] = rate * 26;
     updateData['doubleLineCanvasData.xAxis.fontSize'] = rate * 24;
@@ -74,34 +72,33 @@ Page({
     let doubleLineSeries = {
       data: [{
         data: [
-          { x: 0, y: 100, title: "" },
-          { x: 1, y: 230, title: "" },
-          { x: 2, y: 430, title: "" },
-          { x: 3, y: 530, title: "" },
-          { x: 4, y: 630, title: "" },
-          { x: 5, y: 730, title: "" },
-          { x: 6, y: 830, title: "" }
+          { x: 0, y: 60, title: "最近5次|分数：60|用时:220s" },
+          { x: 1, y: 70, title: "最近4次|分数：70|用时:230s"  },
+          { x: 2, y: 85, title: "最近3次|分数：85|用时:400s"   },
+          { x: 3, y: 85, title: "最近2次|分数：85|用时:180s"  },
+          { x: 4, y: 100, title: "最近1次|分数：100|用时:170s" },
+       
         ],
+
         lineColor: "#13CE66",
         point: {
-          size: rate * 5,
+          size: rate * 10,
           bColor: '#13CE66',
-          sClor: '#ffffff',
+          sClor: '#fff111',
           isShow: true
         }
       }, {
         data: [
-          { x: 0, y: 90, title: "" },
-          { x: 1, y: 130, title: "" },
-          { x: 2, y: 430, title: "" },
-          { x: 3, y: 530, title: "" },
-          { x: 4, y: 130, title: "" },
-          { x: 5, y: 130, title: "" },
-          { x: 6, y: 830, title: "" }
+          { x: 0, y: 220 / 6, title: "" },
+          { x: 1, y: 230 / 6, title: "" },
+          { x: 2, y: 400 / 6, title: "" },
+          { x: 3, y: 180 /6, title: "" },
+          { x: 4, y: 170/ 6, title: "" },
+        
         ],
         lineColor: "#FFA848",
         point: {
-          size: rate * 5,
+          size: rate * 10,
           bColor: '#FFA848',
           sClor: '#ffffff',
           isShow: true
@@ -109,19 +106,19 @@ Page({
       }]
     };
     let doubleLineXAxisData = [
-      { x: 0, y: 0, title: "04.4" },
-      { x: 1, y: 0, title: "04.5" },
-      { x: 2, y: 0, title: "04.6" },
-      { x: 3, y: 0, title: "04.7" },
-      { x: 4, y: 0, title: "04.8" },
-      { x: 5, y: 0, title: "04.9" },
-      { x: 6, y: 0, title: "04.10" }
+      { x: 0, y: 0, title: "1" },
+      { x: 1, y: 0, title: "2" },
+      { x: 2, y: 0, title: "3" },
+      { x: 3, y: 0, title: "4" },
+      { x: 4, y: 0, title: "5" },
+     
     ];
     let doubleLineYAxisData = [];
-    doubleLineYMax = 1000;
-    doubleLineXMax = 6;
-    doubleLineYMax = this.getYMax(doubleLineYMax);
+    doubleLineYMax = 100;
+    doubleLineXMax = 4;
+    doubleLineYMax = 100;
     doubleLineYAxisData = this.getYAxiss(doubleLineYMax);
+  
 
     doubleLineRightYMax = this.getYMax(6.0 * 100);
     lineDoubleRatio = doubleLineYMax / doubleLineRightYMax;
@@ -132,7 +129,7 @@ Page({
     updateData['doubleLineCanvasData.xAxis.padd'] = (doubleLineCanvasWidth - rate * (10 + 10 + 20 + 20 + 68 + 68)) / (doubleLineXMax - doubleLineXMin); //画布宽度减去内外边距
     updateData['doubleLineCanvasData.yAxis.minData'] = doubleLineYMin;
     updateData['doubleLineCanvasData.yAxis.maxData'] = doubleLineYMax;
-    updateData['doubleLineCanvasData.yAxis.padd'] = rate * 304 / (doubleLineYMax - doubleLineYMin);
+    updateData['doubleLineCanvasData.yAxis.padd'] = rate * 600 / (doubleLineYMax - doubleLineYMin);
     updateData['doubleLineCanvasData.series'] = doubleLineSeries;
     updateData['doubleLineCanvasData.xAxis.data'] = doubleLineXAxisData;
     updateData['doubleLineCanvasData.yAxis.data'] = doubleLineYAxisData;
@@ -141,64 +138,28 @@ Page({
     this.setData(updateData);
   },
 
-  /**
-   * 生命周期函数--监听页面隐藏
-   */
-  onHide: function () {
-
-  },
-
-  /**
-   * 生命周期函数--监听页面卸载
-   */
-  onUnload: function () {
-    console.log("22222");
-  },
-
-  /**
-   * 页面相关事件处理函数--监听用户下拉动作
-   */
-  onPullDownRefresh: function () {
-
-  },
-
-  /**
-   * 页面上拉触底事件的处理函数
-   */
-  onReachBottom: function () {
-
-  },
-
-  /**
-   * 用户点击右上角分享
-   */
-  onShareAppMessage: function () {
-
-  },
 
 
 
-  /**
-      * 获得y轴最大值
-      * @param  {[type]} yMax 当前最大值
-      * @return {[type]}      [description]
-      */
   getYMax: function (yMax) {
+    return 600
+    console.log(yMax);
     let maxInt = Math.floor(yMax);
     let maxLength = maxInt.toString().length;
     let interval = 0;
     if (maxInt == 0) {
-      interval = 3 * Math.pow(10, 1);
+      interval = 5 * Math.pow(10, 1);
     } else {
       if (maxLength > 3) {
-        interval = 3 * Math.pow(10, maxLength - 2);
+        interval = 5 * Math.pow(10, maxLength - 2);
       } else {
-        interval = 3 * Math.pow(10, maxLength - 1);
+        interval = yMax / 5;
       }
     }
 
     let remainder = maxInt % interval;
     let conversionMax = ((maxInt - remainder) / interval + 1) * interval;
+  console.log(conversionMax);
     return conversionMax;
   },
 
@@ -210,7 +171,7 @@ Page({
   getYAxiss: function (yMax) {
     let yAxisData = [];
 
-    let avg = yMax / 3;
+    let avg = yMax / 5;
 
     let point = {};
     point.x = 0;
@@ -235,6 +196,18 @@ Page({
     point3.y = Math.floor(avg) * 3;
     point3.title = Math.floor(avg) * 3;
     yAxisData.push(point3);
+
+
+    let point4 = {};
+    point4.x = 0;
+    point4.y = Math.floor(avg) * 4;
+    point4.title = Math.floor(avg) * 4;
+    yAxisData.push(point4);
+    let point5 = {};
+    point5.x = 0;
+    point5.y = Math.floor(avg) * 5;
+    point5.title = Math.floor(avg) * 5;
+    yAxisData.push(point5);
     return yAxisData;
   },
 
@@ -246,7 +219,7 @@ Page({
   getRightYAxiss: function (yMax, ratio) {
     let yAxisData = [];
 
-    let avg = yMax / 3;
+    let avg = yMax / 5;
 
     let point = {};
     point.x = 0;
@@ -257,20 +230,32 @@ Page({
     let point1 = {};
     point1.x = 0;
     point1.y = Math.floor(avg) * ratio;
-    point1.title = Math.floor(avg) / 100 + "%";
+    point1.title = Math.floor(avg);
     yAxisData.push(point1);
 
     let point2 = {};
     point2.x = 0;
     point2.y = Math.floor(avg) * 2 * ratio;;
-    point2.title = Math.floor(avg) * 2 / 100 + "%";
+    point2.title = Math.floor(avg) * 2 ;
     yAxisData.push(point2);
 
     let point3 = {};
     point3.x = 0;
     point3.y = Math.floor(avg) * 3 * ratio;
-    point3.title = Math.floor(avg) * 3 / 100 + "%";
+    point3.title = Math.floor(avg) * 3 ;
     yAxisData.push(point3);
+
+    let point4 = {};
+    point4.x = 0;
+    point4.y = Math.floor(avg) *4 * ratio;
+    point4.title = Math.floor(avg) * 4 ;
+    yAxisData.push(point4);
+
+    let point5 = {};
+    point5.x = 0;
+    point5.y = Math.floor(avg) * 5 * ratio;
+    point5.title = Math.floor(avg) * 5  ;
+    yAxisData.push(point5);
     return yAxisData;
   }
 })

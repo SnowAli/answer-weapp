@@ -4,7 +4,10 @@
   </view>
 </navigation>
 <view class="container">
-  <view class="mask"></view>
+  <view class="mask">
+
+</view>
+
   <view class="user">
     <van-image round src="{{userInfo.avatarUrl}}" width="150rpx" height="150rpx" custom-class="avatar" error-class="error"></van-image>
     <text wx:if="{{!userInfo}}" class="nickname" bindtap="getUserProfile">点击登录</text>

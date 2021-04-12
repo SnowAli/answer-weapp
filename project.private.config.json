@@ -57,6 +57,12 @@
         {
           "name": "pages/advise/index",
           "pathName": "pages/advise/index",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/analyse/index",
+          "pathName": "pages/analyse/index",
           "scene": null
         }
       ]

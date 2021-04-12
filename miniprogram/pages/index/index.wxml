@@ -5,7 +5,11 @@
   </view>
 </navigation>
 <view class="container">
-  <view class="mask"></view>
+  <view class="mask">
+
+    <image src="https://raw.githubusercontent.com/weilanwl/ColorUI/master/demo/images/wave.gif" mode="scaleToFill" class="wave"></image>
+ 
+  </view>
   <view class="swiper-wrap">
     <swiper class="swiper" indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" circular="{{circular}}">
       <block>

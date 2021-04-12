@@ -14,7 +14,8 @@
   top: -950rpx;
   width: 1500rpx;
   height: 1500rpx;
-  background-image: linear-gradient(45deg, #c51c0f, #f70e17c9);
+  /* background-image: linear-gradient(45deg, #c51c0f, #f70e17c9); */
+  background-color:#DE2910;
   /* background-image: linear-gradient(#fd8f10,#ffdddd); */
   border-radius: 50%;
 }
